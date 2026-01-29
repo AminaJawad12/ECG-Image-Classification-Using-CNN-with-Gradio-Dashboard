@@ -88,3 +88,10 @@ pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn
 ---
 
 ## 📈 Result Screenshot
+
+## 📈 Result Screenshots
+
+![Result Screenshot 1](https://raw.githubusercontent.com/AminaJawad12/ECG-Image-Classification-Using-CNN-with-Gradio-Dashboard/ff11adafa61e6f72bee97e22362ff63e4f8cf488/result_dashboard_1.jpeg)
+
+![Result Screenshot 2](https://raw.githubusercontent.com/AminaJawad12/ECG-Image-Classification-Using-CNN-with-Gradio-Dashboard/ff11adafa61e6f72bee97e22362ff63e4f8cf488/result_dashboard_2.jpeg)
+
