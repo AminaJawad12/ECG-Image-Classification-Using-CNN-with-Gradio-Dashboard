@@ -60,6 +60,7 @@ The trained CNN model is deployed using Gradio, offering a user-friendly medical
 ├── Normal Person ECG Images
 
 └── nonecg_images
+
 ---
 
 Each ECG image is resized to 224×224 and normalized before training.
@@ -119,10 +120,12 @@ This tool is for educational and research purposes only and **not a substitute f
 git clone https://github.com/your-username/ecg-image-classification-cnn.git
 cd ecg-image-classification-cnn
 
+
 2️⃣ **Install Dependencies**
 
 ```bash
 pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
+
 
 2️⃣ **Run the Gradio App**
 python app.py
