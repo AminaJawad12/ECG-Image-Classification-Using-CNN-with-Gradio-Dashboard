@@ -111,40 +111,28 @@ This tool is for educational and research purposes only and **not a substitute f
 - Google Colab  
 
 ---
-
 ## 🚀 How to Run the Project (Google Colab)
 
-Follow the steps below to run this project using **Google Colab**.
+Follow these steps to run the ECG Image Classification project in **Google Colab**:
 
 ```bash
-# 1️⃣ Clone the Repository
-# Open a new notebook in Google Colab and run:
-git clone https://github.com/AminaJawad12/Human-Action-Recognition-using-CNN-LSTM-on-the-UCF50-Dataset-with-Model-Evaluation-Dashboard.git
-cd Human-Action-Recognition-using-CNN-LSTM-on-the-UCF50-Dataset-with-Model-Evaluation-Dashboard
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/ecg-image-classification-cnn.git
+cd ecg-image-classification-cnn
 
-# 2️⃣ Download and Prepare the Dataset
-# - Download the UCF50 dataset from the official website.
-# - Extract the dataset.
-# - Upload it to Colab and place it in the following structure:
-#     dataset/
-#      └── UCF50/
-# ⚠️ Make sure the folder structure is correct, otherwise the notebook will not locate the videos.
+# 2️⃣ Download and prepare the dataset
+# Download the ECG dataset, extract it, and upload to Colab in the structure:
+# dataset/
+#  └── ECG_Images/
 
-# 3️⃣ Open the Notebook
-# Open the following notebook in Google Colab:
-#     Human_Action_Recognition_CNN_LSTM.ipynb
+# 3️⃣ Open the notebook in Colab
+# ECG_Image_Classification_CNN_Gradio.ipynb
 
-# 4️⃣ Install Required Dependencies
-# Run the installation cell in the notebook, or install manually:
-pip install tensorflow opencv-python numpy matplotlib scikit-learn
+# 4️⃣ Install dependencies
+pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
 
-# 5️⃣ Run the Project
-# - Run each cell sequentially from top to bottom.
-# - The notebook will:
-#     - Preprocess video frames
-#     - Train the CNN–LSTM model
-#     - Evaluate performance
-#     - Display accuracy, confusion matrix, and results dashboard
+# 5️⃣ Run the notebook
+# Execute all cells sequentially to preprocess ECG images, train the CNN model, evaluate performance, and launch the Gradio dashboard.
 
 ---
 
