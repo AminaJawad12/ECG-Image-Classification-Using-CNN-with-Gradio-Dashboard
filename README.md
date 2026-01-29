@@ -116,23 +116,12 @@ This tool is for educational and research purposes only and **not a substitute f
 Follow these steps to run the ECG Image Classification project in **Google Colab**:
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/your-username/ecg-image-classification-cnn.git
-cd ecg-image-classification-cnn
-
-# 2️⃣ Download and prepare the dataset
-# Download the ECG dataset, extract it, and upload to Colab in the structure:
-# dataset/
-#  └── ECG_Images/
-
-# 3️⃣ Open the notebook in Colab
-# ECG_Image_Classification_CNN_Gradio.ipynb
-
-# 4️⃣ Install dependencies
+# Clone the repository, download dataset, install dependencies, and run the notebook in one flow
+git clone https://github.com/your-username/ecg-image-classification-cnn.git && cd ecg-image-classification-cnn
+# Download the ECG dataset, extract it, and upload to Colab in the structure: dataset/ECG_Images/
+# Open the notebook ECG_Image_Classification_CNN_Gradio.ipynb in Colab
 pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
-
-# 5️⃣ Run the notebook
-# Execute all cells sequentially to preprocess ECG images, train the CNN model, evaluate performance, and launch the Gradio dashboard.
+# Execute all cells sequentially to preprocess ECG images, train the CNN model, evaluate performance, and launch the Gradio dashboard
 
 ---
 
