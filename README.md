@@ -84,3 +84,7 @@ git clone https://github.com/your-username/ecg-image-classification-cnn.git && c
 # Open the notebook ECG_Image_Classification_CNN_Gradio.ipynb in Colab
 pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
 # Execute all cells sequentially to preprocess ECG images, train the CNN model, evaluate performance, and launch the Gradio dashboard
+
+---
+
+## 📈 Result Screenshot
