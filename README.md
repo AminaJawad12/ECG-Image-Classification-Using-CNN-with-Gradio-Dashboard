@@ -1,12 +1,15 @@
 # 🫀 ECG Image Classification Using CNN with Gradio Dashboard
 
+📎 **Dataset (Mendeley Data):**  
+https://data.mendeley.com/datasets/gwbz3fsgp8/2  
+
 An end-to-end **Deep Learning–based ECG Image Classification system** using **Convolutional Neural Networks (CNN)**, integrated with an **interactive Gradio medical dashboard**. The system classifies ECG images into multiple cardiac conditions and provides **clinical interpretation, risk assessment, and recommendations**.
 
 ---
 
 ## 📌 Project Overview
 
-Electrocardiograms (ECGs) are essential diagnostic tools for identifying heart-related conditions. This project applies **Computer Vision and Deep Learning** techniques to automatically classify ECG images into five distinct categories:
+Electrocardiograms (ECGs) are widely used diagnostic tools for detecting and monitoring heart-related conditions. This project leverages **Computer Vision and Deep Learning** techniques to automatically classify ECG images into five clinically relevant categories:
 
 - **Myocardial Infarction (MI)**
 - **History of Myocardial Infarction (HMI)**
@@ -14,7 +17,7 @@ Electrocardiograms (ECGs) are essential diagnostic tools for identifying heart-r
 - **Normal ECG**
 - **Non-ECG Images**
 
-A trained CNN model is deployed using **Gradio**, offering a user-friendly medical dashboard that displays predictions, confidence scores, and actionable clinical insights.
+The trained CNN model is deployed using **Gradio**, providing a user-friendly medical dashboard that presents predictions, confidence scores, and clinically meaningful insights.
 
 ---
 
@@ -24,11 +27,11 @@ A trained CNN model is deployed using **Gradio**, offering a user-friendly medic
 - Supports **5 ECG / Non-ECG classes**
 - High classification accuracy (**~97%**)
 - Interactive **Gradio medical dashboard**
-- Confidence score & probability distribution visualization
+- Prediction confidence & probability distribution visualization
 - Automated **risk level assessment** (LOW / MEDIUM / HIGH)
-- Clinical interpretation & recommendations
-- Suggested medical tests & lifestyle advice
-- Confusion matrix & classification report
+- Clinical interpretation of results
+- Recommended medical tests and lifestyle guidance
+- Confusion matrix & detailed classification report
 
 ---
 
@@ -36,7 +39,7 @@ A trained CNN model is deployed using **Gradio**, offering a user-friendly medic
 
 **Input Shape:** `224 × 224 × 3`
 
-### CNN Layers
+### Convolutional Layers
 
 - Conv2D (32 filters) → MaxPooling
 - Conv2D (64 filters) → MaxPooling
@@ -52,28 +55,28 @@ A trained CNN model is deployed using **Gradio**, offering a user-friendly medic
 
 ---
 
-## 📂 Dataset
+## 📂 Dataset Description
 
-The dataset consists of labeled ECG images representing multiple cardiac conditions and non-ECG samples.
+The dataset consists of labeled ECG image samples representing multiple cardiac conditions along with non-ECG images for robust classification.
 
 ### Dataset Classes
 
-- ECG Images of **Myocardial Infarction patients**
-- ECG Images of patients with **History of MI**
-- ECG Images showing **Abnormal Heartbeat**
+- ECG images of **Myocardial Infarction patients**
+- ECG images of patients with **History of MI**
+- ECG images showing **Abnormal Heartbeat**
 - **Normal ECG** images
 - **Non-ECG** images
 
-### Dataset Link
+### Dataset Source
 
-📎 **Mendeley Dataset:**  
+📎 **Mendeley Data:**  
 https://data.mendeley.com/datasets/gwbz3fsgp8/2
 
-### Preprocessing Steps
+### Data Preprocessing
 
-- Resize all images to **224 × 224**
-- Normalize pixel values
-- Convert labels to categorical format
+- Images resized to **224 × 224**
+- Pixel value normalization
+- One-hot encoding of class labels
 
 ---
 
@@ -82,26 +85,26 @@ https://data.mendeley.com/datasets/gwbz3fsgp8/2
 - **Overall Accuracy:** ~97%
 - **Macro F1-score:** ~0.96
 
-### Confusion Matrix Summary
+### Confusion Matrix Insights
 
-- Excellent separation between ECG classes
-- Near-perfect classification for **Non-ECG images**
-- Minimal misclassification among cardiac conditions
+- Strong class separation across all ECG categories
+- Near-perfect detection of **Non-ECG images**
+- Minimal overlap between cardiac conditions
 
 ---
 
 ## 🖥️ Gradio Medical Dashboard
 
-The Gradio-based interface allows users to:
+The Gradio-based dashboard enables users to:
 
 - Upload an ECG image
-- View the **predicted class & confidence score**
-- Analyze probability distribution across all classes
-- Receive automated **risk level assessment**
-- Read **clinical interpretation** of the result
-- Get recommended **medical tests**
-- Receive **lifestyle & monitoring advice**
-- View emergency guidance for high-risk predictions
+- View the **predicted class and confidence score**
+- Inspect probability distribution across all classes
+- Receive an automated **risk level assessment**
+- Read clinical interpretation of predictions
+- Get recommended diagnostic tests
+- Receive lifestyle and monitoring advice
+- Access emergency guidance for high-risk cases
 
 ---
 
@@ -128,14 +131,14 @@ The Gradio-based interface allows users to:
 
 ## ⚠️ Disclaimer
 
-This project is intended **for educational and research purposes only**. It is **not a substitute for professional medical diagnosis or clinical decision-making**. Always consult a qualified healthcare professional for medical advice.
+This project is intended **strictly for educational and research purposes**. It is **not a substitute for professional medical diagnosis or clinical decision-making**. Always consult qualified healthcare professionals for medical advice.
 
 ---
 
 ## ⭐ Acknowledgments
 
 - ECG dataset provided via **Mendeley Data**
-- Open-source libraries and tools that enabled model development and deployment
+- Open-source libraries and frameworks that supported model development and deployment
 
 ---
 
