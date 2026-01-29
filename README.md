@@ -52,15 +52,12 @@ The trained CNN model is deployed using Gradio, offering a user-friendly medical
 
 ## 📂 Dataset Structure
 
-- ✅ ECG Images of Myocardial Infarction Patients
-- ✅ ECG Images of Patient that have History of MI  
-- ✅ ECG Images of Patient that have abnormal heartbeat
-- ✅ Normal Person ECG Images
-- ✅ nonecg_images
+- ECG Images of Myocardial Infarction Patients  
+- ECG Images of Patients with History of MI  
+- ECG Images of Patients with Abnormal Heartbeat  
+- Normal Person ECG Images  
+- Non-ECG Images  
 
-  ---
-
-  
 Each ECG image is resized to 224×224 and normalized before training.
 
 ---
@@ -111,6 +108,7 @@ This tool is for educational and research purposes only and **not a substitute f
 - Google Colab  
 
 ---
+
 ## 🚀 How to Run the Project (Google Colab)
 
 Follow these steps to run the ECG Image Classification project in **Google Colab**:
@@ -122,23 +120,3 @@ git clone https://github.com/your-username/ecg-image-classification-cnn.git && c
 # Open the notebook ECG_Image_Classification_CNN_Gradio.ipynb in Colab
 pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
 # Execute all cells sequentially to preprocess ECG images, train the CNN model, evaluate performance, and launch the Gradio dashboard
-
----
-
-## 📈 Result Screenshot
-
-![Result Screenshot](https://github.com/AminaJawad12/Human-Action-Recognition-using-CNN-LSTM-on-the-UCF50-Dataset-with-Model-Evaluation-Dashboard/blob/main/Result%20image.jpeg?raw=true)
-
----
-
-## ✅ Notes
-- Training time depends on hardware availability.
-- Using **Google Colab GPU** is strongly recommended.
-- Always run all cells **in order** to avoid errors.
-
----
-
-⭐ If you find this project helpful, consider giving the repository a star!
-
-
-
