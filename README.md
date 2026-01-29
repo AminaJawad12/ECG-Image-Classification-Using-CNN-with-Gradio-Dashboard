@@ -51,18 +51,16 @@ The trained CNN model is deployed using Gradio, offering a user-friendly medical
 ---
 
 ## 📂 Dataset Structure
-├── ECG Images of Myocardial Infarction Patients
 
-├── ECG Images of Patient that have History of MI
+- ✅ ECG Images of Myocardial Infarction Patients
+- ✅ ECG Images of Patient that have History of MI  
+- ✅ ECG Images of Patient that have abnormal heartbeat
+- ✅ Normal Person ECG Images
+- ✅ nonecg_images
 
-├── ECG Images of Patient that have abnormal heartbeat
+  ---
 
-├── Normal Person ECG Images
-
-└── nonecg_images
-
----
-
+  
 Each ECG image is resized to 224×224 and normalized before training.
 
 ---
@@ -86,6 +84,7 @@ The Gradio interface allows users to:
 - View predicted class & confidence  
 
 And receive:  
+
 - Risk level (LOW / MEDIUM / HIGH)  
 - Clinical interpretation  
 - Recommended medical tests  
@@ -113,59 +112,54 @@ This tool is for educational and research purposes only and **not a substitute f
 
 ---
 
-## ⚙️ Installation & Setup
+## 🚀 How to Run the Project (Google Colab)
 
-1️⃣ **Clone the Repository**  
+Follow the steps below to run this project using **Google Colab**.
+
+### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/your-username/ecg-image-classification-cnn.git
 cd ecg-image-classification-cnn
 
+---
 
-2️⃣ **Install Dependencies**
+### 2️⃣ Download and Prepare the Dataset
+- Download the  dataset
+- Extract the dataset.
+- Upload it to Colab 
 
-```bash
+
+---
+
+### 3️⃣ Open the Notebook
+Open the  notebook in Google Colab:
+
+---
+
+### 4️⃣ Install Required Dependencies
 pip install tensorflow keras numpy opencv-python scikit-learn matplotlib seaborn gradio
 
+---
 
-2️⃣ **Run the Gradio App**
-python app.py
-## 📁 Saved Model
-
-The trained model is saved as:  
-`ecg_classifier.h5`  
-
-*Note:* HDF5 format is legacy; future updates may use `.keras` format.
+### 5️⃣ Run the Project
+- Run **each cell sequentially** from top to bottom.
 
 ---
 
-## 📸 Sample Output (Gradio Dashboard)
+## 📈 Result Screenshot
 
-- ECG Prediction  
-- Confidence Score  
-- Risk Classification  
-- Probability Distribution  
-- Medical Recommendations  
+![Result Screenshot](https://github.com/AminaJawad12/Human-Action-Recognition-using-CNN-LSTM-on-the-UCF50-Dataset-with-Model-Evaluation-Dashboard/blob/main/Result%20image.jpeg?raw=true)
 
 ---
 
-## 👨‍⚕️ Medical Disclaimer
-
-This project is intended only for **academic and research use**.  
-It must not be used for real-world clinical decision-making.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+## ✅ Notes
+- Training time depends on hardware availability.
+- Using **Google Colab GPU** is strongly recommended.
+- Always run all cells **in order** to avoid errors.
 
 ---
 
-## ⭐ Acknowledgments
+⭐ If you find this project helpful, consider giving the repository a star!
 
-- ECG image dataset contributors  
-- TensorFlow & Gradio communities  
-- Academic research references on ECG analysis
- 
 
 
